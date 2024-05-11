@@ -3,23 +3,23 @@ import React from 'react'
 const Cta = () => {
   return (
     <>
-       <div class="cta-container">
+      <div class="cta-container">
 
-<img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner" />
+        <img src="./assets/images/cta-banner.jpg" alt="summer collection" class="cta-banner" />
 
-<a href="#" class="cta-content">
+        <a href="#" class="cta-content">
 
-  <p class="discount">25% Discount</p>
+          <p class="discount">25% Discount</p>
 
-  <h2 class="cta-title">Summer collection</h2>
+          <h2 class="cta-title">Summer collection</h2>
 
-  <p class="cta-text">Starting @ $10</p>
+          <p class="cta-text">Starting @ $10</p>
 
-  <button class="cta-btn">Shop now</button>
+          <button class="cta-btn">Shop now</button>
 
-</a>
+        </a>
 
-</div>
+      </div>
     </>
   )
 }

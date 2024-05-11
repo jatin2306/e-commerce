@@ -1,180 +1,161 @@
-import React from 'react'
-import img from '../assets/blog-1.jpg'
+import React from "react";
+import img from "../assets/blog-1.jpg";
 
 const Category = () => {
     return (
-        <>   <div class="category">
-
-            <div class="container">
-
-                <div class="category-item-container has-scrollbar">
-
-                    <div class="category-item">
-
-                        <div class="category-img-box">
-                            <img src={img} alt="dress & frock" width="30" />
-                        </div>
-
-                        <div class="category-content-box">
-
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">Dress & frock</h3>
-
-                                <p class="category-item-amount">(53)</p>
+        <>
+            {" "}
+            <div class="category">
+                <div class="container">
+                    <div class="category-item-container has-scrollbar">
+                        <div class="category-item">
+                            <div class="category-img-box">
+                                <img src={img} alt="dress & frock" width="30" />
                             </div>
 
-                            <a href="#" class="category-btn">Show all</a>
+                            <div class="category-content-box">
+                                <div class="category-content-flex">
+                                    <h3 class="category-item-title">Dress & frock</h3>
 
+                                    <p class="category-item-amount">(53)</p>
+                                </div>
+
+                                <a href="#" class="category-btn">
+                                    Show all
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="category-item">
-
-                        <div class="category-img-box">
-                            <img src={img} alt="winter wear" width="30" />
-                        </div>
-
-                        <div class="category-content-box">
-
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">Winter wear</h3>
-
-                                <p class="category-item-amount">(58)</p>
+                        <div class="category-item">
+                            <div class="category-img-box">
+                                <img src={img} alt="winter wear" width="30" />
                             </div>
 
-                            <a href="#" class="category-btn">Show all</a>
+                            <div class="category-content-box">
+                                <div class="category-content-flex">
+                                    <h3 class="category-item-title">Winter wear</h3>
 
+                                    <p class="category-item-amount">(58)</p>
+                                </div>
+
+                                <a href="#" class="category-btn">
+                                    Show all
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="category-item">
-
-                        <div class="category-img-box">
-                            <img src={img} alt="glasses & lens" width="30" />
-                        </div>
-
-                        <div class="category-content-box">
-
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">Glasses & lens</h3>
-
-                                <p class="category-item-amount">(68)</p>
+                        <div class="category-item">
+                            <div class="category-img-box">
+                                <img src={img} alt="glasses & lens" width="30" />
                             </div>
 
-                            <a href="#" class="category-btn">Show all</a>
+                            <div class="category-content-box">
+                                <div class="category-content-flex">
+                                    <h3 class="category-item-title">Glasses & lens</h3>
 
+                                    <p class="category-item-amount">(68)</p>
+                                </div>
+
+                                <a href="#" class="category-btn">
+                                    Show all
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="category-item">
-
-                        <div class="category-img-box">
-                            <img src={img} alt="shorts & jeans" width="30" />
-                        </div>
-
-                        <div class="category-content-box">
-
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">Shorts & jeans</h3>
-
-                                <p class="category-item-amount">(84)</p>
+                        <div class="category-item">
+                            <div class="category-img-box">
+                                <img src={img} alt="shorts & jeans" width="30" />
                             </div>
 
-                            <a href="#" class="category-btn">Show all</a>
+                            <div class="category-content-box">
+                                <div class="category-content-flex">
+                                    <h3 class="category-item-title">Shorts & jeans</h3>
 
+                                    <p class="category-item-amount">(84)</p>
+                                </div>
+
+                                <a href="#" class="category-btn">
+                                    Show all
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="category-item">
-
-                        <div class="category-img-box">
-                            <img src={img} alt="t-shirts" width="30" />
-                        </div>
-
-                        <div class="category-content-box">
-
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">T-shirts</h3>
-
-                                <p class="category-item-amount">(35)</p>
+                        <div class="category-item">
+                            <div class="category-img-box">
+                                <img src={img} alt="t-shirts" width="30" />
                             </div>
 
-                            <a href="#" class="category-btn">Show all</a>
+                            <div class="category-content-box">
+                                <div class="category-content-flex">
+                                    <h3 class="category-item-title">T-shirts</h3>
 
+                                    <p class="category-item-amount">(35)</p>
+                                </div>
+
+                                <a href="#" class="category-btn">
+                                    Show all
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="category-item">
-
-                        <div class="category-img-box">
-                            <img src={img} alt="jacket" width="30" />
-                        </div>
-
-                        <div class="category-content-box">
-
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">Jacket</h3>
-
-                                <p class="category-item-amount">(16)</p>
+                        <div class="category-item">
+                            <div class="category-img-box">
+                                <img src={img} alt="jacket" width="30" />
                             </div>
 
-                            <a href="#" class="category-btn">Show all</a>
+                            <div class="category-content-box">
+                                <div class="category-content-flex">
+                                    <h3 class="category-item-title">Jacket</h3>
 
+                                    <p class="category-item-amount">(16)</p>
+                                </div>
+
+                                <a href="#" class="category-btn">
+                                    Show all
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="category-item">
-
-                        <div class="category-img-box">
-                            <img src={img} alt="watch" width="30" />
-                        </div>
-
-                        <div class="category-content-box">
-
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">Watch</h3>
-
-                                <p class="category-item-amount">(27)</p>
+                        <div class="category-item">
+                            <div class="category-img-box">
+                                <img src={img} alt="watch" width="30" />
                             </div>
 
-                            <a href="#" class="category-btn">Show all</a>
+                            <div class="category-content-box">
+                                <div class="category-content-flex">
+                                    <h3 class="category-item-title">Watch</h3>
 
+                                    <p class="category-item-amount">(27)</p>
+                                </div>
+
+                                <a href="#" class="category-btn">
+                                    Show all
+                                </a>
+                            </div>
                         </div>
 
-                    </div>
-
-                    <div class="category-item">
-
-                        <div class="category-img-box">
-                            <img src={img} alt="hat & caps" width="30" />
-                        </div>
-
-                        <div class="category-content-box">
-
-                            <div class="category-content-flex">
-                                <h3 class="category-item-title">Hat & caps</h3>
-
-                                <p class="category-item-amount">(39)</p>
+                        <div class="category-item">
+                            <div class="category-img-box">
+                                <img src={img} alt="hat & caps" width="30" />
                             </div>
 
-                            <a href="#" class="category-btn">Show all</a>
+                            <div class="category-content-box">
+                                <div class="category-content-flex">
+                                    <h3 class="category-item-title">Hat & caps</h3>
 
+                                    <p class="category-item-amount">(39)</p>
+                                </div>
+
+                                <a href="#" class="category-btn">
+                                    Show all
+                                </a>
+                            </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
+        </>
+    );
+};
 
-        </div></>
-    )
-}
-
-export default Category
+export default Category;

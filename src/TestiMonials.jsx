@@ -25,7 +25,7 @@ const TestiMonials = () => {
                 </div>
 
             </div>
-            </>)
+        </>)
 }
 
 export default TestiMonials
