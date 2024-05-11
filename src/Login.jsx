@@ -1,86 +1,86 @@
 import React, { useState } from 'react'
 // import './Login.scss'
 const Login = () => {
-    const [isSignUp, setIsSignUp] = useState(false);
+  const [isSignUp, setIsSignUp] = useState(false);
 
-    const toggleForm = () => {
-        setIsSignUp(!isSignUp);
-    };
-    return (
-        <>
-            <div class="form_wrapper">
-  <div class="form_container">
-    <div class="title_container">
-      <h2>Responsive Login Form</h2>
-    </div>
-    <div class="row clearfix">
-      <div class="col_half">
-        <div class="social_btn fb">
-          <a href="#">
-            <span>
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </span>
-            Sign in with Facebook
-          </a>
-        </div>
-        <div class="social_btn tw">
-          <a href="#">
-            <span>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </span>
-            Sign in with Twitter
-          </a>
-        </div>
-        <div class="social_btn gplus">
-          <a href="#">
-            <span>
-              <i class="fa fa-google-plus" aria-hidden="true"></i>
-            </span>
-            Sign in with Google+
-          </a>
-        </div>
-        <div class="row clearfix create_account">
-          <div>
-            <a href="#">Create an Account</a>
+  const toggleForm = () => {
+    setIsSignUp(!isSignUp);
+  };
+  return (
+    <>
+      <div className="form_wrapper">
+        <div className="form_container">
+          <div className="title_container">
+            <h2>Responsive Login Form</h2>
           </div>
-        </div>
-      </div>
-      <div class="col_half last">
-        <form>
-          <div class="input_field">
-            <span>
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-            </span>
-            <input type="email" name="email" placeholder="Email" required/>
-          </div>
-          <div class="input_field">
-            <span>
-              <i class="fa fa-lock" aria-hidden="true"></i>
-            </span>
-            <input type="password" name="phone" placeholder="Password" required/>
-          </div>
-          <input class="button" type="submit" value="Sign in"/>
-          <div class="row clearfix bottom_row">
-            <div class="col_half remember_me">
-              <input name="" type="checkbox" value=""/>
-              Remember me
+          <div className="row clearfix">
+            <div className="col_half">
+              <div className="social_btn fb">
+                <a href="#">
+                  <span>
+                    <i className="fa fa-facebook" aria-hidden="true"></i>
+                  </span>
+                  Sign in with Facebook
+                </a>
+              </div>
+              <div className="social_btn tw">
+                <a href="#">
+                  <span>
+                    <i className="fa fa-twitter" aria-hidden="true"></i>
+                  </span>
+                  Sign in with Twitter
+                </a>
+              </div>
+              <div className="social_btn gplus">
+                <a href="#">
+                  <span>
+                    <i className="fa fa-google-plus" aria-hidden="true"></i>
+                  </span>
+                  Sign in with Google+
+                </a>
+              </div>
+              <div className="row clearfix create_account">
+                <div>
+                  <a href="#">Create an Account</a>
+                </div>
+              </div>
             </div>
-            <div class="col_half forgot_pw">
-              <a href="#">Forgot Password?</a>
+            <div className="col_half last">
+              <form>
+                <div className="input_field">
+                  <span>
+                    <i className="fa fa-envelope" aria-hidden="true"></i>
+                  </span>
+                  <input type="email" name="email" placeholder="Email" required />
+                </div>
+                <div className="input_field">
+                  <span>
+                    <i className="fa fa-lock" aria-hidden="true"></i>
+                  </span>
+                  <input type="password" name="phone" placeholder="Password" required />
+                </div>
+                <input className="button" type="submit" value="Sign in" />
+                <div className="row clearfix bottom_row">
+                  <div className="col_half remember_me">
+                    <input name="" type="checkbox" value="" />
+                    Remember me
+                  </div>
+                  <div className="col_half forgot_pw">
+                    <a href="#">Forgot Password?</a>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-        </form>
+        </div>
+        <p className="credit">
+          Developed by
+          <a href="http://www.designtheway.com/responsive-login-form/" target="_blank">Design the way</a>
+        </p>
       </div>
-    </div>
-  </div>
-  <p class="credit">
-    Developed by 
-    <a href="http://www.designtheway.com/responsive-login-form/" target="_blank">Design the way</a>
-  </p>
-</div>
 
-        </>
-    );
+    </>
+  );
 };
 
 export default Login;

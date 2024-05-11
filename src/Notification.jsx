@@ -6,28 +6,28 @@ const Notification = () => {
 
     return (
         <>
-            <div class={`notification-toast ${notification ? "closed" : ""}`} data-toast>
+            <div className={`notification-toast ${notification ? "closed" : ""}`} data-toast>
 
-                <button class="toast-close-btn" data-toast-close>
+                <button className="toast-close-btn" data-toast-close>
                     <ion-icon name="close-outline" onClick={() => setnotification(true)}></ion-icon>
                 </button>
 
-                <div class="toast-banner">
+                <div className="toast-banner">
                     <img src={img} alt="Rose Gold Earrings" width="80" height="70" />
                 </div>
 
-                <div class="toast-detail">
+                <div className="toast-detail">
 
-                    <p class="toast-message">
+                    <p className="toast-message">
                         Someone in new just bought
                     </p>
 
-                    <p class="toast-title">
+                    <p className="toast-title">
                         Rose Gold Earrings
                     </p>
 
-                    <p class="toast-meta">
-                        <time datetime="PT2M">2 Minutes</time> ago
+                    <p className="toast-meta">
+                        <time dateTime="PT2M">2 Minutes</time> ago
                     </p>
 
                 </div>

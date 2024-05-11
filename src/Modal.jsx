@@ -1,41 +1,41 @@
 import React, { useState } from 'react'
 
 const Modal = () => {
-  const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(false)
 
     return (
         <>
-            <div class={`modal ${modal ? "closed" : ""}`} data-modal>
+            <div className={`modal ${modal ? "closed" : ""}`} data-modal>
 
-                <div class="modal-close-overlay" data-modal-overlay onClick={() => setModal(!modal)}></div>
+                <div className="modal-close-overlay" data-modal-overlay onClick={() => setModal(!modal)}></div>
 
-                <div class="modal-content">
+                <div className="modal-content">
 
-                    <button class="modal-close-btn" data-modal-close onClick={() => setModal(!modal)}>
+                    <button className="modal-close-btn" data-modal-close onClick={() => setModal(!modal)}>
                         <ion-icon name="close-outline" onClick={() => setModal(!modal)}></ion-icon>
                     </button>
 
-                    <div class="newsletter-img">
+                    <div className="newsletter-img">
                         <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400" />
                     </div>
 
-                    <div class="newsletter">
+                    <div className="newsletter">
 
                         <form action="#">
 
-                            <div class="newsletter-header">
+                            <div className="newsletter-header">
 
-                                <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+                                <h3 className="newsletter-title">Subscribe Newsletter.</h3>
 
-                                <p class="newsletter-desc">
+                                <p className="newsletter-desc">
                                     Subscribe the <b>Anon</b> to get latest products and discount update.
                                 </p>
 
                             </div>
 
-                            <input type="email" name="email" class="email-field" placeholder="Email Address" required />
+                            <input type="email" name="email" className="email-field" placeholder="Email Address" required />
 
-                            <button type="submit" class="btn-newsletter">Subscribe</button>
+                            <button type="submit" className="btn-newsletter">Subscribe</button>
 
                         </form>
 

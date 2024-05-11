@@ -3,21 +3,21 @@ import React from 'react'
 const TestiMonials = () => {
     return (
         <>
-            <div class="testimonial">
+            <div className="testimonial">
 
-                <h2 class="title">testimonial</h2>
+                <h2 className="title">testimonial</h2>
 
-                <div class="testimonial-card">
+                <div className="testimonial-card">
 
-                    <img src="./assets/images/testimonial-1.jpg" alt="alan doe" class="testimonial-banner" width="80" height="80" />
+                    <img src="./assets/images/testimonial-1.jpg" alt="alan doe" className="testimonial-banner" width="80" height="80" />
 
-                    <p class="testimonial-name">Alan Doe</p>
+                    <p className="testimonial-name">Alan Doe</p>
 
-                    <p class="testimonial-title">CEO & Founder Invision</p>
+                    <p className="testimonial-title">CEO & Founder Invision</p>
 
-                    <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26" />
+                    <img src="./assets/images/icons/quotes.svg" alt="quotation" className="quotation-img" width="26" />
 
-                    <p class="testimonial-desc">
+                    <p className="testimonial-desc">
                         Lorem ipsum dolor sit amet consectetur Lorem ipsum
                         dolor dolor sit amet.
                     </p>

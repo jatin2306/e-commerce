@@ -5,67 +5,67 @@ const Banner = () => {
   return (
     <>
 
-      <div class="banner">
+      <div className="banner">
 
-        <div class="container">
+        <div className="container">
 
-          <div class="slider-container has-scrollbar">
+          <div className="slider-container has-scrollbar">
 
-            <div class="slider-item">
+            <div className="slider-item">
 
-              <img src={img} alt="women's latest fashion sale" class="banner-img" />
+              <img src={img} alt="women's latest fashion sale" className="banner-img" />
 
-              <div class="banner-content">
+              <div className="banner-content">
 
-                <p class="banner-subtitle">Trending item</p>
+                <p className="banner-subtitle">Trending item</p>
 
-                <h2 class="banner-title">Women's latest fashion sale</h2>
+                <h2 className="banner-title">Women's latest fashion sale</h2>
 
-                <p class="banner-text">
+                <p className="banner-text">
                   starting at &dollar; <b>20</b>.00
                 </p>
 
-                <a href="#" class="banner-btn">Shop now</a>
+                <a href="#" className="banner-btn">Shop now</a>
 
               </div>
 
             </div>
 
-            <div class="slider-item">
+            <div className="slider-item">
 
-              <img src={img} alt="modern sunglasses" class="banner-img" />
+              <img src={img} alt="modern sunglasses" className="banner-img" />
 
-              <div class="banner-content">
+              <div className="banner-content">
 
-                <p class="banner-subtitle">Trending accessories</p>
+                <p className="banner-subtitle">Trending accessories</p>
 
-                <h2 class="banner-title">Modern sunglasses</h2>
+                <h2 className="banner-title">Modern sunglasses</h2>
 
-                <p class="banner-text">
+                <p className="banner-text">
                   starting at &dollar; <b>15</b>.00
                 </p>
 
-                <a href="#" class="banner-btn">Shop now</a>
+                <a href="#" className="banner-btn">Shop now</a>
 
               </div>
 
             </div>
 
-            <div class="slider-item">
+            <div className="slider-item">
 
-              <img src={img} alt="new fashion summer sale" class="banner-img" />
+              <img src={img} alt="new fashion summer sale" className="banner-img" />
 
-              <div class="banner-content">
+              <div className="banner-content">
 
-                <p class="banner-subtitle">Sale Offer</p>
+                <p className="banner-subtitle">Sale Offer</p>
 
-                <h2 class="banner-title">New fashion summer sale</h2>
+                <h2 className="banner-title">New fashion summer sale</h2>
 
-                <p class="banner-text">
+                <p className="banner-text">
                   starting at &dollar; <b>29</b>.99
                 </p>
 
-                <a href="#" class="banner-btn">Shop now</a>
+                <a href="#" className="banner-btn">Shop now</a>
 
               </div>
 
