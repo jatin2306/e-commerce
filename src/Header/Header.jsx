@@ -1,6 +1,5 @@
 import React from 'react'
 import img from '../../assets/blog-1.jpg'
-import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -89,10 +88,10 @@ const Header = () => {
 
                         <div className="header-user-actions">
 
-                            <Link to="/login">
+                            <a href="/login">
                                 <button className="action-btn">
                                     <ion-icon name="person-outline"></ion-icon>
-                                </button></Link>
+                                </button></a>
 
                             <button className="action-btn">
                                 <ion-icon name="heart-outline"></ion-icon>

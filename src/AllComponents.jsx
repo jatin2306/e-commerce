@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Modal from './Modal'
 import Notification from './Notification'
 import Header from './Header/Header'
@@ -15,6 +15,10 @@ import Blog from './Blog'
 import Footer from './Footer'
 
 const AllComponents = () => {
+    useEffect(() => {
+        var sheet = document.getElementById("logincss")
+        sheet.disabled = true;
+    }, [])
     return (
         <>
             <div className="overlay" data-overlay></div>

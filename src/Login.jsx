@@ -1,85 +1,75 @@
-import React, { useState } from 'react'
-// import './Login.scss'
+import React, { useEffect, useState } from 'react';
 const Login = () => {
-  const [isSignUp, setIsSignUp] = useState(false);
+  useEffect(() => {
+    var sheet1 = document.getElementById("style1")
+    sheet1.disabled = true;
+    var sheet2 = document.getElementById("style2")
+    sheet2.disabled = true; var sheet2 = document.getElementById("logincss")
+    sheet2.disabled = false;
+  }, [])
+  const [isRightPanelActive, setIsRightPanelActive] = useState(false);
 
-  const toggleForm = () => {
-    setIsSignUp(!isSignUp);
+  const handleSignUpClick = () => {
+    setIsRightPanelActive(true);
   };
+
+  const handleSignInClick = () => {
+    setIsRightPanelActive(false);
+  };
+
   return (
-    <>
-      <div className="form_wrapper">
-        <div className="form_container">
-          <div className="title_container">
-            <h2>Responsive Login Form</h2>
-          </div>
-          <div className="row clearfix">
-            <div className="col_half">
-              <div className="social_btn fb">
-                <a href="#">
-                  <span>
-                    <i className="fa fa-facebook" aria-hidden="true"></i>
-                  </span>
-                  Sign in with Facebook
-                </a>
-              </div>
-              <div className="social_btn tw">
-                <a href="#">
-                  <span>
-                    <i className="fa fa-twitter" aria-hidden="true"></i>
-                  </span>
-                  Sign in with Twitter
-                </a>
-              </div>
-              <div className="social_btn gplus">
-                <a href="#">
-                  <span>
-                    <i className="fa fa-google-plus" aria-hidden="true"></i>
-                  </span>
-                  Sign in with Google+
-                </a>
-              </div>
-              <div className="row clearfix create_account">
-                <div>
-                  <a href="#">Create an Account</a>
-                </div>
-              </div>
+    <div className={`container ${isRightPanelActive ? 'right-panel-active' : ''}`}>
+      <div className="row">
+        <div className="form-container sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <div className="social-container">
+              <a href="#" className="social"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#" className="social"><i className="fa fa-google" aria-hidden="true"></i></a>
+              <a href="#" className="social"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
             </div>
-            <div className="col_half last">
-              <form>
-                <div className="input_field">
-                  <span>
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
-                  </span>
-                  <input type="email" name="email" placeholder="Email" required />
-                </div>
-                <div className="input_field">
-                  <span>
-                    <i className="fa fa-lock" aria-hidden="true"></i>
-                  </span>
-                  <input type="password" name="phone" placeholder="Password" required />
-                </div>
-                <input className="button" type="submit" value="Sign in" />
-                <div className="row clearfix bottom_row">
-                  <div className="col_half remember_me">
-                    <input name="" type="checkbox" value="" />
-                    Remember me
-                  </div>
-                  <div className="col_half forgot_pw">
-                    <a href="#">Forgot Password?</a>
-                  </div>
-                </div>
-              </form>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button>Sign Up</button>
+            <p id="mobile_para">To keep connected with us, please login</p>
+            <button className="ghost_mobile" id="signIn_mobile" onClick={handleSignInClick}>Sign In</button>
+          </form>
+        </div>
+        <div className="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div className="social-container">
+              <a href="#" className="social"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#" className="social"><i className="fa fa-google" aria-hidden="true"></i></a>
+              <a href="#" className="social"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="#">Forgot your password?</a>
+            <button>Sign In</button>
+            <p id="mobile_para">Don't have an account? Sign up here !!</p>
+            <button className="ghost_mobile" id="signUp_mobile" onClick={handleSignUpClick}>Sign Up</button>
+          </form>
+        </div>
+        <div className="overlay-container">
+          <div className="overlay">
+            <div className="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>To keep connected with us please login with your personal info</p>
+              <button className="ghost" id="signIn" onClick={handleSignInClick}>Sign In</button>
+            </div>
+            <div className="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Enter your personal details and start journey with us</p>
+              <button className="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
             </div>
           </div>
         </div>
-        <p className="credit">
-          Developed by
-          <a href="http://www.designtheway.com/responsive-login-form/" target="_blank">Design the way</a>
-        </p>
       </div>
-
-    </>
+    </div>
   );
 };
 
