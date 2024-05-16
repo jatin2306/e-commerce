@@ -46,8 +46,8 @@ a {
 
 button {
   border-radius: 20px;
-  border: 1px solid #d0f224;
-  background-color: #d0f224;
+  border: 1px solid #2445f2;
+  background-color: #2445f2;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
@@ -162,8 +162,8 @@ input {
 
 .overlay {
   background: #ff416c;
-  background: -webkit-linear-gradient(to right, #d0f224, #d0f224);
-  background: linear-gradient(to right, #d0f224, #d0f224);
+  background: -webkit-linear-gradient(to right, #2445f2, #2445f2);
+  background: linear-gradient(to right, #2445f2, #2445f2);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -228,7 +228,7 @@ input {
 }
 
 .social:hover {
-  background-color: #d0f224;
+  background-color: #2445f2;
   color: #fff;
 }
 
@@ -241,6 +241,9 @@ input {
 }
 
 @media only screen and (max-width: 575.98px) {
+  body {
+    display: block;
+  }
   .form-container h1 {
     font-size: 1.1rem;
     font-weight: 700;
@@ -270,7 +273,7 @@ input {
   .ghost_mobile {
     display: block;
     font-size: 0.8rem;
-    background-image: linear-gradient(180deg, #849918, #d0f224);
+    background-image: linear-gradient(180deg, #2445f2, #2445f2);
   }
 
   #mobile_para {
