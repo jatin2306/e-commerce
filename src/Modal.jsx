@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import img from "../assets/blog-1.jpg";
 
 const Modal = () => {
     const [modal, setModal] = useState(false)
@@ -16,7 +17,7 @@ const Modal = () => {
                     </button>
 
                     <div className="newsletter-img">
-                        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400" />
+                        <img src={img} alt="subscribe newsletter" width="400" height="400" />
                     </div>
 
                     <div className="newsletter">

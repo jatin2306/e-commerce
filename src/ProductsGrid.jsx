@@ -1,4 +1,5 @@
 import React from 'react'
+import img from "../assets/blog-1.jpg";
 
 const ProductsGrid = () => {
   return (
@@ -13,8 +14,8 @@ const ProductsGrid = () => {
 
             <div className="showcase-banner">
 
-              <img src="./assets/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300" className="product-img default" />
-              <img src="./assets/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300" className="product-img hover" />
+              <img src={img} alt="Mens Winter Leathers Jackets" width="300" className="product-img default" />
+              <img src={img} alt="Mens Winter Leathers Jackets" width="300" className="product-img hover" />
 
               <p className="showcase-badge">15%</p>
 
@@ -68,9 +69,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" className="product-img default"
+              <img src={img} alt="Pure Garment Dyed Cotton Shirt" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" className="product-img hover"
+              <img src={img} alt="Pure Garment Dyed Cotton Shirt" className="product-img hover"
                 width="300" />
 
               <p className="showcase-badge angle black">sale</p>
@@ -121,9 +122,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" className="product-img default"
+              <img src={img} alt="MEN Yarn Fleece Full-Zip Jacket" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket" className="product-img hover"
+              <img src={img} alt="MEN Yarn Fleece Full-Zip Jacket" className="product-img hover"
                 width="300" />
 
               <div className="showcase-actions">
@@ -172,9 +173,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt" className="product-img default"
+              <img src={img} alt="Black Floral Wrap Midi Skirt" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt" className="product-img hover"
+              <img src={img} alt="Black Floral Wrap Midi Skirt" className="product-img hover"
                 width="300" />
 
               <p className="showcase-badge angle pink">new</p>
@@ -225,9 +226,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/shoe-2.jpg" alt="Casual Men's Brown shoes" className="product-img default"
+              <img src={img} alt="Casual Men's Brown shoes" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/shoe-2_1.jpg" alt="Casual Men's Brown shoes" className="product-img hover"
+              <img src={img} alt="Casual Men's Brown shoes" className="product-img hover"
                 width="300" />
 
               <div className="showcase-actions">
@@ -276,9 +277,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/watch-3.jpg" alt="Pocket Watch Leather Pouch" className="product-img default"
+              <img src={img} alt="Pocket Watch Leather Pouch" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/watch-4.jpg" alt="Pocket Watch Leather Pouch" className="product-img hover"
+              <img src={img} alt="Pocket Watch Leather Pouch" className="product-img hover"
                 width="300" />
 
               <p className="showcase-badge angle black">sale</p>
@@ -329,9 +330,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/watch-1.jpg" alt="Smart watche Vital Plus" className="product-img default"
+              <img src={img} alt="Smart watche Vital Plus" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/watch-2.jpg" alt="Smart watche Vital Plus" className="product-img hover" width="300" />
+              <img src={img} alt="Smart watche Vital Plus" className="product-img hover" width="300" />
 
               <div className="showcase-actions">
                 <button className="btn-action">
@@ -379,9 +380,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/party-wear-1.jpg" alt="Womens Party Wear Shoes" className="product-img default"
+              <img ssrc={img} alt="Womens Party Wear Shoes" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/party-wear-2.jpg" alt="Womens Party Wear Shoes" className="product-img hover"
+              <img src={img} alt="Womens Party Wear Shoes" className="product-img hover"
                 width="300" />
 
               <p className="showcase-badge angle black">sale</p>
@@ -432,9 +433,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/jacket-1.jpg" alt="Mens Winter Leathers Jackets" className="product-img default"
+              <img src={img} alt="Mens Winter Leathers Jackets" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/jacket-2.jpg" alt="Mens Winter Leathers Jackets" className="product-img hover"
+              <img src={img} alt="Mens Winter Leathers Jackets" className="product-img hover"
                 width="300" />
 
               <div className="showcase-actions">
@@ -483,9 +484,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/sports-2.jpg" alt="Trekking & Running Shoes - black" className="product-img default"
+              <img src={img} alt="Trekking & Running Shoes - black" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/sports-4.jpg" alt="Trekking & Running Shoes - black" className="product-img hover"
+              <img src={img} alt="Trekking & Running Shoes - black" className="product-img hover"
                 width="300" />
 
               <p className="showcase-badge angle black">sale</p>
@@ -536,9 +537,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/shoe-1.jpg" alt="Men's Leather Formal Wear shoes" className="product-img default"
+              <img src={img} alt="Men's Leather Formal Wear shoes" className="product-img default"
                 width="300" />
-              <img src="./assets/images/products/shoe-1_1.jpg" alt="Men's Leather Formal Wear shoes" className="product-img hover"
+              <img src={img} alt="Men's Leather Formal Wear shoes" className="product-img hover"
                 width="300" />
 
               <div className="showcase-actions">
@@ -587,9 +588,9 @@ const ProductsGrid = () => {
           <div className="showcase">
 
             <div className="showcase-banner">
-              <img src="./assets/images/products/shorts-1.jpg" alt="Better Basics French Terry Sweatshorts"
+              <img src={img} alt="Better Basics French Terry Sweatshorts"
                 className="product-img default" width="300" />
-              <img src="./assets/images/products/shorts-2.jpg" alt="Better Basics French Terry Sweatshorts"
+              <img src={img} alt="Better Basics French Terry Sweatshorts"
                 className="product-img hover" width="300" />
 
               <p className="showcase-badge angle black">sale</p>

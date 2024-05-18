@@ -1,4 +1,5 @@
 import React from 'react'
+import img from "../assets/blog-1.jpg";
 
 const TestiMonials = () => {
     return (
@@ -9,13 +10,13 @@ const TestiMonials = () => {
 
                 <div className="testimonial-card">
 
-                    <img src="./assets/images/testimonial-1.jpg" alt="alan doe" className="testimonial-banner" width="80" height="80" />
+                    <img src={img} alt="alan doe" className="testimonial-banner" width="80" height="80" />
 
                     <p className="testimonial-name">Alan Doe</p>
 
                     <p className="testimonial-title">CEO & Founder Invision</p>
 
-                    <img src="./assets/images/icons/quotes.svg" alt="quotation" className="quotation-img" width="26" />
+                    <img src={img} className="quotation-img" width="26" />
 
                     <p className="testimonial-desc">
                         Lorem ipsum dolor sit amet consectetur Lorem ipsum

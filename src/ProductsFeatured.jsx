@@ -1,4 +1,5 @@
 import React from 'react'
+import img from "../assets/blog-1.jpg";
 
 const ProductsFeatured = () => {
   return (
@@ -14,7 +15,7 @@ const ProductsFeatured = () => {
             <div className="showcase">
 
               <div className="showcase-banner">
-                <img src="./assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs" className="showcase-img" />
+                <img src={img} alt="shampoo, conditioner & facewash packs" className="showcase-img" />
               </div>
 
               <div className="showcase-content">
@@ -104,7 +105,7 @@ const ProductsFeatured = () => {
             <div className="showcase">
 
               <div className="showcase-banner">
-                <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold diamonds Earring" className="showcase-img" />
+                <img src={img} alt="Rose Gold diamonds Earring" className="showcase-img" />
               </div>
 
               <div className="showcase-content">

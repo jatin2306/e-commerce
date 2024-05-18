@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../assets/blog-1.jpg";
 
 const Footer = () => {
   return (
@@ -383,7 +384,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="container">
             <img
-              src="./assets/images/payment.png"
+              src={img}
               alt="payment method"
               className="payment-img"
             />

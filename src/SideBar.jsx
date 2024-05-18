@@ -75,7 +75,7 @@ const SideBar = () => {
                             <button className="sidebar-accordion-menu" data-accordion-btn>
 
                                 <div className="menu-title-flex">
-                                    <img src="./assets/images/icons/shoes.svg" alt="footwear" className="menu-title-img" width="20"
+                                    <img src={img} alt="footwear" className="menu-title-img" width="20"
                                         height="20" />
 
                                     <p className="menu-title">Footwear</p>
@@ -127,7 +127,7 @@ const SideBar = () => {
                             <button className="sidebar-accordion-menu" data-accordion-btn>
 
                                 <div className="menu-title-flex">
-                                    <img src="./assets/images/icons/jewelry.svg" alt="clothes" className="menu-title-img" width="20"
+                                    <img src={img} alt="clothes" className="menu-title-img" width="20"
                                         height="20" />
 
                                     <p className="menu-title">Jewelry</p>
@@ -172,7 +172,7 @@ const SideBar = () => {
                             <button className="sidebar-accordion-menu" data-accordion-btn>
 
                                 <div className="menu-title-flex">
-                                    <img src="./assets/images/icons/perfume.svg" alt="perfume" className="menu-title-img" width="20"
+                                    <img src={img} alt="perfume" className="menu-title-img" width="20"
                                         height="20" />
 
                                     <p className="menu-title">Perfume</p>
@@ -224,7 +224,7 @@ const SideBar = () => {
                             <button className="sidebar-accordion-menu" data-accordion-btn>
 
                                 <div className="menu-title-flex">
-                                    <img src="./assets/images/icons/cosmetics.svg" alt="cosmetics" className="menu-title-img" width="20"
+                                    <img src={img} alt="cosmetics" className="menu-title-img" width="20"
                                         height="20" />
 
                                     <p className="menu-title">Cosmetics</p>
@@ -276,7 +276,7 @@ const SideBar = () => {
                             <button className="sidebar-accordion-menu" data-accordion-btn>
 
                                 <div className="menu-title-flex">
-                                    <img src="./assets/images/icons/glasses.svg" alt="glasses" className="menu-title-img" width="20"
+                                    <img src={img} alt="glasses" className="menu-title-img" width="20"
                                         height="20" />
 
                                     <p className="menu-title">Glasses</p>
@@ -314,7 +314,7 @@ const SideBar = () => {
                             <button className="sidebar-accordion-menu" data-accordion-btn>
 
                                 <div className="menu-title-flex">
-                                    <img src="./assets/images/icons/bag.svg" alt="bags" className="menu-title-img" width="20" height="20" />
+                                    <img src={img} alt="bags" className="menu-title-img" width="20" height="20" />
 
                                     <p className="menu-title">Bags</p>
                                 </div>
@@ -375,7 +375,7 @@ const SideBar = () => {
                             <div className="showcase">
 
                                 <a href="#" className="showcase-img-box">
-                                    <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                                    <img src={img} alt="baby fabric shoes" width="75" height="75"
                                         className="showcase-img" />
                                 </a>
 
@@ -405,7 +405,7 @@ const SideBar = () => {
                             <div className="showcase">
 
                                 <a href="#" className="showcase-img-box">
-                                    <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" className="showcase-img"
+                                    <img src={img} alt="men's hoodies t-shirt" className="showcase-img"
                                         width="75" height="75" />
                                 </a>
 
@@ -434,7 +434,7 @@ const SideBar = () => {
                             <div className="showcase">
 
                                 <a href="#" className="showcase-img-box">
-                                    <img src="./assets/images/products/3.jpg" alt="girls t-shirt" className="showcase-img" width="75"
+                                    <img src={img} alt="girls t-shirt" className="showcase-img" width="75"
                                         height="75" />
                                 </a>
 
@@ -463,7 +463,7 @@ const SideBar = () => {
                             <div className="showcase">
 
                                 <a href="#" className="showcase-img-box">
-                                    <img src="./assets/images/products/4.jpg" alt="woolen hat for men" className="showcase-img" width="75"
+                                    <img src={img} alt="woolen hat for men" className="showcase-img" width="75"
                                         height="75" />
                                 </a>
 

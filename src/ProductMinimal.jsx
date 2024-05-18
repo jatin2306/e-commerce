@@ -17,7 +17,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/clothes-1.jpg" alt="relaxed short full sleeve t-shirt" width="70" className="showcase-img" />
+                  <img src={img} alt="relaxed short full sleeve t-shirt" width="70" className="showcase-img" />
                 </a>
 
                 <div className="showcase-content">
@@ -40,7 +40,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/clothes-2.jpg" alt="girls pink embro design top" className="showcase-img" width="70" />
+                  <img src={img} alt="girls pink embro design top" className="showcase-img" width="70" />
                 </a>
 
                 <div className="showcase-content">
@@ -63,7 +63,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/clothes-3.jpg" alt="black floral wrap midi skirt" className="showcase-img"
+                  <img src={img} alt="black floral wrap midi skirt" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -87,7 +87,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/shirt-1.jpg" alt="pure garment dyed cotton shirt" className="showcase-img"
+                  <img src={img} alt="pure garment dyed cotton shirt" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -115,7 +115,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/jacket-5.jpg" alt="men yarn fleece full-zip jacket" className="showcase-img"
+                  <img src={img} alt="men yarn fleece full-zip jacket" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -139,7 +139,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/jacket-1.jpg" alt="mens winter leathers jackets" className="showcase-img"
+                  <img src={img} alt="mens winter leathers jackets" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -163,7 +163,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/jacket-3.jpg" alt="mens winter leathers jackets" className="showcase-img"
+                  <img src={img} alt="mens winter leathers jackets" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -187,7 +187,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/shorts-1.jpg" alt="better basics french terry sweatshorts" className="showcase-img"
+                  <img src={img} alt="better basics french terry sweatshorts" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -225,7 +225,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/sports-1.jpg" alt="running & trekking shoes - white" className="showcase-img"
+                  <img src={img} alt="running & trekking shoes - white" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -249,7 +249,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/sports-2.jpg" alt="trekking & running shoes - black" className="showcase-img"
+                  <img src={img} alt="trekking & running shoes - black" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -273,7 +273,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/party-wear-1.jpg" alt="womens party wear shoes" className="showcase-img"
+                  <img src={img} alt="womens party wear shoes" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -297,7 +297,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/sports-3.jpg" alt="sports claw women's shoes" className="showcase-img"
+                  <img src={img} alt="sports claw women's shoes" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -325,7 +325,8 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/sports-6.jpg" alt="air tekking shoes - white" className="showcase-img"
+                  <img
+                    src={img} alt="air tekking shoes - white" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -349,7 +350,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/shoe-3.jpg" alt="Boot With Suede Detail" className="showcase-img" width="70" />
+                  <img src={img} alt="Boot With Suede Detail" className="showcase-img" width="70" />
                 </a>
 
                 <div className="showcase-content">
@@ -372,7 +373,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/shoe-1.jpg" alt="men's leather formal wear shoes" className="showcase-img"
+                  <img src={img} alt="men's leather formal wear shoes" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -396,7 +397,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/shoe-2.jpg" alt="casual men's brown shoes" className="showcase-img" width="70" />
+                  <img src={img} alt="casual men's brown shoes" className="showcase-img" width="70" />
                 </a>
 
                 <div className="showcase-content">
@@ -433,7 +434,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/watch-3.jpg" alt="pocket watch leather pouch" className="showcase-img"
+                  <img src={img} alt="pocket watch leather pouch" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -457,7 +458,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/jewellery-3.jpg" alt="silver deer heart necklace" className="showcase-img"
+                  <img src={img} alt="silver deer heart necklace" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -481,7 +482,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/perfume.jpg" alt="titan 100 ml womens perfume" className="showcase-img"
+                  <img src={img} alt="titan 100 ml womens perfume" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -505,7 +506,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/belt.jpg" alt="men's leather reversible belt" className="showcase-img"
+                  <img src={img} alt="men's leather reversible belt" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -533,7 +534,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/jewellery-2.jpg" alt="platinum zircon classNameic ring" className="showcase-img"
+                  <img src={img} alt="platinum zircon classNameic ring" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -557,7 +558,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/watch-1.jpg" alt="smart watche vital plus" className="showcase-img" width="70" />
+                  <img src={img} alt="smart watche vital plus" className="showcase-img" width="70" />
                 </a>
 
                 <div className="showcase-content">
@@ -580,7 +581,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/shampoo.jpg" alt="shampoo conditioner packs" className="showcase-img"
+                  <img src={img} alt="shampoo conditioner packs" className="showcase-img"
                     width="70" />
                 </a>
 
@@ -604,7 +605,7 @@ const ProductMinimal = () => {
               <div className="showcase">
 
                 <a href="#" className="showcase-img-box">
-                  <img src="./assets/images/products/jewellery-1.jpg" alt="rose gold peacock earrings" className="showcase-img"
+                  <img src={img} alt="rose gold peacock earrings" className="showcase-img"
                     width="70" />
                 </a>
 

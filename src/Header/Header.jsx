@@ -221,7 +221,7 @@ const Header = () => {
 
                                         <li className="panel-list-item">
                                             <a href="#">
-                                                <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119" />
+                                                <img src={img} alt="women's fashion" width="250" height="119" />
                                             </a>
                                         </li>
 
@@ -255,7 +255,7 @@ const Header = () => {
 
                                         <li className="panel-list-item">
                                             <a href="#">
-                                                <img src="./assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119" />
+                                                <img src={img} alt="mouse collection" width="250" height="119" />
                                             </a>
                                         </li>
 

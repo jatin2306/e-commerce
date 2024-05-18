@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../assets/blog-1.jpg";
 
 const Blog = () => {
   return (
@@ -9,7 +10,7 @@ const Blog = () => {
             <div className="blog-card">
               <a href="#">
                 <img
-                  src="./assets/images/blog-1.jpg"
+                  src={img}
                   alt="Clothes Retail KPIs 2021 Guide for Clothes Executives"
                   width="300"
                   className="blog-banner"
@@ -37,7 +38,7 @@ const Blog = () => {
             <div className="blog-card">
               <a href="#">
                 <img
-                  src="./assets/images/blog-2.jpg"
+                  src={img}
                   alt="Curbside fashion Trends: How to Win the Pickup Battle."
                   className="blog-banner"
                   width="300"
@@ -65,7 +66,7 @@ const Blog = () => {
             <div className="blog-card">
               <a href="#">
                 <img
-                  src="./assets/images/blog-3.jpg"
+                  src={img}
                   alt="EBT vendors: Claim Your Share of SNAP Online Revenue."
                   className="blog-banner"
                   width="300"
@@ -93,7 +94,7 @@ const Blog = () => {
             <div className="blog-card">
               <a href="#">
                 <img
-                  src="./assets/images/blog-4.jpg"
+                  src={img}
                   alt="Curbside fashion Trends: How to Win the Pickup Battle."
                   className="blog-banner"
                   width="300"

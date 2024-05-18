@@ -1,11 +1,12 @@
 import React from 'react'
+import img from "../assets/blog-1.jpg";
 
 const Cta = () => {
   return (
     <>
       <div className="cta-container">
 
-        <img src="./assets/images/cta-banner.jpg" alt="summer collection" className="cta-banner" />
+        <img src={img} lt="summer collection" className="cta-banner" />
 
         <a href="#" className="cta-content">
 
