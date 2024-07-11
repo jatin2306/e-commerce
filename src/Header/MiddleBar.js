@@ -23,7 +23,6 @@ const Search = styled("div")(({ theme }) => ({
   borderRadius: theme.shape.borderRadius,
   backgroundColor: "white",
   color: "black",
-  marginRight: theme.spacing(3),
   width: "100%",
   display: "flex",
   alignItems: "center",
@@ -72,18 +71,17 @@ const MiddleBar = () => {
         sx={{ padding: "8px 0", backgroundColor: "#0046B3" }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Box display="flex" alignItems="center">
+          <Box display="flex" alignItems="center" flexGrow={1}>
             <Typography
               variant="h6"
               component="a"
               href="/"
               sx={{ color: "#fff", textDecoration: "none", marginRight: 2 }}
             >
-              morata{" "}
-              <span style={{ color: "red", fontSize: "0.7em", marginLeft: 4 }}>
-                MARKET
-              </span>
+              WearFit{" "}
             </Typography>
+          </Box>
+          <Box display="flex" alignItems="center" flexGrow={1} justifyContent="center">
             <Box
               display="flex"
               alignItems="center"
@@ -128,7 +126,7 @@ const MiddleBar = () => {
               </Search>
             </Box>
           </Box>
-          <Box display="flex" alignItems="center">
+          <Box display="flex" alignItems="center" flexGrow={1} justifyContent="flex-end">
             <Link to="/Login" style={{ textDecoration: "none" }}>
               <IconButton color="inherit">
                 <AccountCircleIcon sx={{ color: "white", fontSize: 28 }} />

@@ -1,102 +1,136 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Button, Box, Typography, Menu, MenuItem, IconButton } from '@mui/material';
-import { styled } from '@mui/system';
-import MenuIcon from '@mui/icons-material/Menu';
-import HomeIcon from '@mui/icons-material/Home';
-import ShopIcon from '@mui/icons-material/Shop';
-import CategoryIcon from '@mui/icons-material/Category';
-import PagesIcon from '@mui/icons-material/Pages';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
-import LocalOfferIcon from '@mui/icons-material/LocalOffer';
+import { TextField, Button, Typography, Box, Divider } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import GoogleIcon from '@mui/icons-material/Google'; // Import Google icon from MUI
+import { Link } from 'react-router-dom';
 
-const NavButton = styled(Button)(({ theme }) => ({
-  color: 'white',
-  textTransform: 'none',
-  fontSize: '16px',
-  margin: '0 15px',
-  '&:hover': {
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
-  },
+const FormContainer = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  minHeight: '100vh',
+  backgroundColor: theme.palette.background.default,
 }));
 
-const menuItems = [
-  'Computer & Desktop',
-  'Laptop & iPad',
-  'Cameras & Photos',
-  'Smart Phones & Tablets',
-  'Home & Kitchen',
-  'TV & Audios',
-  'Health & Beauty',
-  'Watches & Eyewear',
-  'Top Deals',
-  'Top Selling Products',
-  'Top Featured Products'
-];
+const FormWrapper = styled(Box)(({ theme }) => ({
+  width: '400px',
+  padding: theme.spacing(4),
+  backgroundColor: '#fff',
+  boxShadow: theme.shadows[3],
+  borderRadius: theme.shape.borderRadius,
+}));
 
-const navButtons = [
-  { label: 'Home', icon: <HomeIcon /> },
-  { label: 'Shop', icon: <ShopIcon /> },
-  { label: 'Product', icon: <CategoryIcon /> },
-  { label: 'Pages', icon: <PagesIcon /> },
-  { label: 'Contact Us', icon: <ContactMailIcon /> }
-];
+const Login = () => {
+  const [isLogin, setIsLogin] = useState(true);
 
-const NavBar = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-
-  const handleMenuClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
+  const toggleForm = () => {
+    setIsLogin(!isLogin);
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0}>
-      <Toolbar sx={{ justifyContent: 'space-between', bgcolor: '#1a73e8', height: '64px', padding: '0 16px' }}>
-        <Box display="flex" alignItems="center">
-          <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleMenuClick} sx={{ color: 'white', padding: '0' }}>
-            <MenuIcon />
-          </IconButton>
-          <NavButton
-            aria-controls="shop-menu"
-            aria-haspopup="true"
-            onClick={handleMenuClick}
-            sx={{ padding: '0 8px' }} // Adjust the padding to reduce space
+    <FormContainer>
+      <FormWrapper>
+        <Typography variant="h5" component="h1" align="center" gutterBottom>
+          {isLogin ? 'Login' : 'Create Account'}
+        </Typography>
+        <Typography variant="body2" align="center" gutterBottom>
+          {isLogin
+            ? 'If you are already a member, easily log in'
+            : 'Please fill in the form to create an account'}
+        </Typography>
+        <form>
+          {!isLogin && (
+            <TextField
+              variant="outlined"
+              margin="normal"
+              required
+              fullWidth
+              id="name"
+              label="Name"
+              name="name"
+              autoComplete="name"
+              autoFocus
+            />
+          )}
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            id="email"
+            label="Email"
+            name="email"
+            autoComplete="email"
+            autoFocus={isLogin}
+          />
+          <TextField
+            variant="outlined"
+            margin="normal"
+            required
+            fullWidth
+            name="password"
+            label="Password"
+            type="password"
+            id="password"
+            autoComplete="current-password"
+          />
+          {!isLogin && (
+            <TextField
+              variant="outlined"
+              margin="normal"
+              required
+              fullWidth
+              name="confirm-password"
+              label="Confirm Password"
+              type="password"
+              id="confirm-password"
+              autoComplete="confirm-password"
+            />
+          )}
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            sx={{ mt: 2, mb: 2 }}
           >
-            Shop by Department
-          </NavButton>
-          <Menu
-            id="shop-menu"
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-            MenuListProps={{
-              'aria-labelledby': 'basic-button',
-            }}
+            {isLogin ? 'Login' : 'Create Account'}
+          </Button>
+          <Divider sx={{ my: 2 }}>OR</Divider>
+          <Button
+            fullWidth
+            variant="outlined"
+            startIcon={<GoogleIcon />}
+            sx={{ mb: 2 }}
           >
-            {menuItems.map((item, index) => (
-              <MenuItem key={index} onClick={handleMenuClose}>{item}</MenuItem>
-            ))}
-          </Menu>
-        </Box>
-        <Box display="flex" alignItems="center">
-          {navButtons.map((button, index) => (
-            <NavButton key={index} startIcon={button.icon}>
-              {button.label}
-            </NavButton>
-          ))}
-        </Box>
-        <Box display="flex" alignItems="center">
-          <LocalOfferIcon sx={{ color: 'white', marginRight: '8px' }} />
-          <Typography variant="body2" sx={{ color: 'white', fontSize: '16px', textTransform: 'none' }}>
-            Sale $20 Off Your First Order
-          </Typography>
-        </Box>
-      </Toolbar>
-    </AppBar>
+            {isLogin ? 'Login with Google' : 'Sign up with Google'}
+          </Button>
+          {isLogin ? (
+            <>
+              <Typography align="center" variant="body2">
+                <Link style={{ textDecoration: 'none', color: '#3f51b5' }}>
+                  Forgot your password?
+                </Link>
+              </Typography>
+              <Typography align="center" variant="body2" sx={{ mt: 1 }}>
+                Don't have an account?{' '}
+                <Link onClick={toggleForm} style={{ textDecoration: 'none', color: '#3f51b5' }}>
+                  Register
+                </Link>
+              </Typography>
+            </>
+          ) : (
+            <Typography align="center" variant="body2">
+              Already have an account?{' '}
+              <Link  onClick={toggleForm} style={{ textDecoration: 'none', color: '#3f51b5' }}>
+                Login
+              </Link>
+            </Typography>
+          )}
+        </form>
+      </FormWrapper>
+    </FormContainer>
   );
 };
 
-export default NavBar;
+export default Login;
