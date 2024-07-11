@@ -1,18 +1,16 @@
 import React from 'react'
-import TopBar from './Header/TopBar'
-import MiddleBar from './Header/MiddleBar'
-import HeroSection from './HeroSection'
-import NavBar from './Header/NavBar'
-import TrendingProducts from './TrendingProducts'
-
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import HomePage from './Home/HomaPage'
+import Login from './Login/Login'
 const App = () => {
   return (
    <>
-   <TopBar/>
-   <MiddleBar/>
-   <NavBar/>
-   <HeroSection/>
-   <TrendingProducts/>
+<Router>
+  <Routes>
+    <Route path="/" element={<HomePage/>}/>
+    <Route path="/Login" element={<Login/>}/>
+  </Routes>
+</Router>
    </>
   )
 }
