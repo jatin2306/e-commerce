@@ -70,7 +70,7 @@ const MiddleBar = () => {
         elevation={0}
         sx={{ padding: "8px 0", backgroundColor: "#0046B3" }}
       >
-        <Toolbar sx={{ justifyContent: "space-between" }}>
+        <Toolbar sx={{ justifyContent: "space-between", flexWrap: "wrap" }}>
           <Box display="flex" alignItems="center" flexGrow={1}>
             <Typography
               variant="h6"
@@ -78,10 +78,20 @@ const MiddleBar = () => {
               href="/"
               sx={{ color: "#fff", textDecoration: "none", marginRight: 2 }}
             >
-              WearFit{" "}
+              WearFit
             </Typography>
           </Box>
-          <Box display="flex" alignItems="center" flexGrow={1} justifyContent="center">
+          <Box
+            display="flex"
+            alignItems="center"
+            flexGrow={1}
+            justifyContent="center"
+            sx={{
+              flexBasis: { xs: "100%", md: "auto" },
+              justifyContent: { xs: "center", md: "center" },
+              mt: { xs: 2, md: 0 },
+            }}
+          >
             <Box
               display="flex"
               alignItems="center"
@@ -90,6 +100,7 @@ const MiddleBar = () => {
                 borderRadius: 1,
                 paddingLeft: 1,
                 paddingRight: 1,
+                width: { xs: "100%", md: "auto" },
               }}
             >
               <Select
@@ -126,7 +137,13 @@ const MiddleBar = () => {
               </Search>
             </Box>
           </Box>
-          <Box display="flex" alignItems="center" flexGrow={1} justifyContent="flex-end">
+          <Box
+            display="flex"
+            alignItems="center"
+            flexGrow={1}
+            justifyContent="flex-end"
+            sx={{ flexBasis: { xs: "100%", md: "auto" }, mt: { xs: 2, md: 0 } }}
+          >
             <Link to="/Login" style={{ textDecoration: "none" }}>
               <IconButton color="inherit">
                 <AccountCircleIcon sx={{ color: "white", fontSize: 28 }} />

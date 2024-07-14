@@ -5,6 +5,8 @@ import Navbar from '../Header/NavBar'
 import HeroSection from './HeroSection'
 import TrendingProducts from './TrendingProducts'
 import PopularCategories from './PopularCategories'
+import FooterTop from './FooterTop'
+import Footer from './Footer'
 
 
 const HomaPage = () => {
@@ -16,7 +18,8 @@ const HomaPage = () => {
 <HeroSection/>
 <TrendingProducts/>
 <PopularCategories/>
-
+<FooterTop/>
+<Footer/>
  </>
   )
 }
