@@ -16,7 +16,7 @@ const TopBar = () => {
         '& > *': { marginBottom: { xs: '8px', sm: '0' } },
       }}
     >
-      <Box 
+      <Box
         display="flex" 
         alignItems="center"
         sx={{

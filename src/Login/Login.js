@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { TextField, Button, Typography, Box, Divider } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import GoogleIcon from '@mui/icons-material/Google'; // Import Google icon from MUI
+import GoogleIcon from '@mui/icons-material/Google';
 import { Link } from 'react-router-dom';
 
 const FormContainer = styled(Box)(({ theme }) => ({
