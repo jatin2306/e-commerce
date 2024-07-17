@@ -29,7 +29,7 @@ const TopBar = () => {
           value="en"
           variant="standard"
           disableUnderline
-          sx={{ color: 'white' }}
+          sx={{ color: 'white', marginRight: '10px' }}
         >
           <MenuItem value="en">English</MenuItem>
           <MenuItem value="es">Español</MenuItem>
@@ -38,21 +38,44 @@ const TopBar = () => {
           value="usd"
           variant="standard"
           disableUnderline
-          sx={{ color: 'white' }}
+          sx={{ color: 'white', marginRight: '10px' }}
         >
           <MenuItem value="usd">United States (USD $)</MenuItem>
           <MenuItem value="eur">Europe (EUR €)</MenuItem>
         </Select>
+        <Typography 
+          variant="body2"
+          sx={{ color: 'white', display: { xs: 'none', sm: 'block' } }}
+        >
+          Need Help? +001 123 456 789
+        </Typography>
       </Box>
-      <Typography 
-        variant="body2"
+      <Box
+        display="flex"
+        justifyContent="flex-end"
         sx={{
-          textAlign: { xs: 'left', sm: 'right' },
-          marginLeft: { xs: '0', sm: 'auto' }
+          width: { xs: '100%', sm: 'auto' },
+          '& > *': { marginLeft: { sm: '20px' } },
         }}
       >
-        Need Help? +001 123 456 789
-      </Typography>
+        {['About Us', 'Order Tracking', 'Contact Us', 'FAQs'].map((text, index) => (
+          <Typography 
+            key={index}
+            variant="body2"
+            sx={{
+              color: 'white',
+              cursor: 'pointer',
+              '&:hover': {
+                textDecoration: 'underline',
+              },
+              marginRight: index < 3 ? { xs: '0', sm: '20px' } : '0', // Add margin-right except for the last item
+              marginBottom: { xs: '8px', sm: '0' }, // Add margin-bottom for xs
+            }}
+          >
+            {text}
+          </Typography>
+        ))}
+      </Box>
     </Box>
   );
 };

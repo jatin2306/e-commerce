@@ -8,6 +8,10 @@ import {
   Menu,
   MenuItem,
   IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
 } from '@mui/material';
 import { styled } from '@mui/system';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -25,7 +29,7 @@ const NavButton = styled(Button)(({ theme }) => ({
   fontSize: '16px',
   margin: '0 15px',
   '&:hover': {
-    backgroundColor: 'transparent', // Remove hover effect
+    backgroundColor: 'transparent',
   },
   [theme.breakpoints.down('md')]: {
     fontSize: '14px',
@@ -49,6 +53,28 @@ const NavBar = () => {
     setMobileOpen(!mobileOpen);
   };
 
+  const mobileMenu = (
+    <Drawer anchor="left" open={mobileOpen} onClose={handleMobileMenuToggle}>
+      <List sx={{ width: 250 }}>
+        <ListItem button onClick={handleMenuClose}>
+          <ListItemText primary="Home" />
+        </ListItem>
+        <ListItem button onClick={handleMenuClose}>
+          <ListItemText primary="Shop" />
+        </ListItem>
+        <ListItem button onClick={handleMenuClose}>
+          <ListItemText primary="Product" />
+        </ListItem>
+        <ListItem button onClick={handleMenuClose}>
+          <ListItemText primary="Pages" />
+        </ListItem>
+        <ListItem button onClick={handleMenuClose}>
+          <ListItemText primary="Contact Us" />
+        </ListItem>
+      </List>
+    </Drawer>
+  );
+
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Toolbar
@@ -64,7 +90,7 @@ const NavBar = () => {
             aria-controls="shop-menu"
             aria-haspopup="true"
             onClick={handleMenuClick}
-            sx={{ padding: '0 8px', marginLeft: '8px' }} // Adjust the padding and margin to reduce space
+            sx={{ padding: '0 8px', marginLeft: '8px' }}
           >
             <Box display="flex" alignItems="center">
               <MenuIcon sx={{ marginRight: '8px' }} />
@@ -129,21 +155,7 @@ const NavBar = () => {
           {mobileOpen ? <MenuOpenIcon /> : <MenuIcon />}
         </IconButton>
       </Toolbar>
-      <Menu
-        anchorEl={anchorEl}
-        open={Boolean(anchorEl)}
-        onClose={handleMenuClose}
-        MenuListProps={{
-          'aria-labelledby': 'basic-button',
-        }}
-        sx={{ display: { xs: 'block', md: 'none' } }}
-      >
-        <MenuItem onClick={handleMenuClose}>Home</MenuItem>
-        <MenuItem onClick={handleMenuClose}>Shop</MenuItem>
-        <MenuItem onClick={handleMenuClose}>Product</MenuItem>
-        <MenuItem onClick={handleMenuClose}>Pages</MenuItem>
-        <MenuItem onClick={handleMenuClose}>Contact Us</MenuItem>
-      </Menu>
+      {mobileMenu}
     </AppBar>
   );
 };
