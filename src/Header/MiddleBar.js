@@ -14,7 +14,7 @@ import { styled } from "@mui/material/styles";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import ShoppingCartSidebar from "./ShoppingCartSidebar";
+import Sidebar from "./SideBar";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Link } from "react-router-dom";
 
@@ -56,10 +56,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const MiddleBar = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isWishlistOpen, setIsWishlistOpen] = useState(false);
 
-  const toggleDrawer = (open) => () => {
-    setIsDrawerOpen(open);
+  const toggleCart = (open) => () => {
+    setIsCartOpen(open);
+  };
+
+  const toggleWishlist = (open) => () => {
+    setIsWishlistOpen(open);
   };
 
   return (
@@ -71,7 +76,15 @@ const MiddleBar = () => {
         sx={{ padding: "8px 0", backgroundColor: "#0046B3" }}
       >
         <Toolbar sx={{ justifyContent: "space-between", flexWrap: "wrap" }}>
-          <Box display="flex" alignItems="center" flexGrow={1}>
+          <Box
+            display="flex"
+            alignItems="center"
+            flexGrow={1}
+            sx={{
+              flexBasis: { xs: "100%", md: "auto" },
+              justifyContent: { xs: "center", md: "flex-start" },
+            }}
+          >
             <Typography
               variant="h6"
               component="a"
@@ -88,8 +101,8 @@ const MiddleBar = () => {
             justifyContent="center"
             sx={{
               flexBasis: { xs: "100%", md: "auto" },
-              justifyContent: { xs: "center", md: "center" },
               mt: { xs: 2, md: 0 },
+              width: { xs: "100%", md: "auto", lg: "60%" },
             }}
           >
             <Box
@@ -142,7 +155,11 @@ const MiddleBar = () => {
             alignItems="center"
             flexGrow={1}
             justifyContent="flex-end"
-            sx={{ flexBasis: { xs: "100%", md: "auto" }, mt: { xs: 2, md: 0 } }}
+            sx={{
+              flexBasis: { xs: "100%", md: "auto" },
+              mt: { xs: 2, md: 0 },
+              justifyContent: { lg: "flex-end" },
+            }}
           >
             <Link to="/Login" style={{ textDecoration: "none" }}>
               <IconButton color="inherit">
@@ -152,7 +169,7 @@ const MiddleBar = () => {
                 </Typography>
               </IconButton>
             </Link>
-            <IconButton color="inherit">
+            <IconButton color="inherit" onClick={toggleWishlist(true)}>
               <Badge badgeContent={3} color="secondary">
                 <FavoriteIcon sx={{ color: "white", fontSize: 28 }} />
               </Badge>
@@ -160,7 +177,7 @@ const MiddleBar = () => {
                 My Wishlist
               </Typography>
             </IconButton>
-            <IconButton color="inherit" onClick={toggleDrawer(true)}>
+            <IconButton color="inherit" onClick={toggleCart(true)}>
               <Badge badgeContent={5} color="secondary">
                 <ShoppingCartIcon sx={{ color: "white", fontSize: 28 }} />
               </Badge>
@@ -171,9 +188,19 @@ const MiddleBar = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      <ShoppingCartSidebar
-        isDrawerOpen={isDrawerOpen}
-        toggleDrawer={toggleDrawer}
+      <Sidebar
+        isDrawerOpen={isCartOpen}
+        toggleDrawer={toggleCart}
+        title="Shopping Cart"
+        content={null} // Pass actual content for cart if available
+        emptyMessage="Your cart is empty."
+      />
+      <Sidebar
+        isDrawerOpen={isWishlistOpen}
+        toggleDrawer={toggleWishlist}
+        title="My Wishlist"
+        content={null} // Pass actual content for wishlist if available
+        emptyMessage="Wishlist is empty."
       />
     </>
   );

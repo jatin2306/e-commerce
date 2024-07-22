@@ -2,7 +2,7 @@ import React from 'react';
 import { Drawer, Box, Typography, IconButton, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
-const ShoppingCartSidebar = ({ isDrawerOpen, toggleDrawer }) => {
+const Sidebar = ({ isDrawerOpen, toggleDrawer, title, content, emptyMessage }) => {
   return (
     <Drawer
       anchor="right"
@@ -26,17 +26,23 @@ const ShoppingCartSidebar = ({ isDrawerOpen, toggleDrawer }) => {
             sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', pb: 2 }}
           >
             <Typography variant="h6" component="div">
-              Shopping Cart
+              {title}
             </Typography>
             <IconButton onClick={toggleDrawer(false)}>
               <CloseIcon />
             </IconButton>
           </Box>
           <Box sx={{ textAlign: 'center', pt: 4 }}>
-            <img src="/path/to/empty-cart-image.png" alt="Empty Cart" style={{ marginBottom: 16, maxWidth: '80%' }} />
-            <Typography variant="body1" component="div">
-              Your cart is empty.
-            </Typography>
+            {content ? (
+              content
+            ) : (
+              <>
+                <img src="/path/to/empty-cart-image.png" alt="Empty" style={{ marginBottom: 16, maxWidth: '80%' }} />
+                <Typography variant="body1" component="div">
+                  {emptyMessage}
+                </Typography>
+              </>
+            )}
           </Box>
         </Box>
         <Button
@@ -52,4 +58,4 @@ const ShoppingCartSidebar = ({ isDrawerOpen, toggleDrawer }) => {
   );
 };
 
-export default ShoppingCartSidebar;
+export default Sidebar;
