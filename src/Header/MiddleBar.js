@@ -155,7 +155,7 @@ const MiddleBar = () => {
               <a
                 className="site-header__logo-image"
 
-                title="Morata Demo Store (password: alo)"
+                title="WearFIT Demo Store (password: alo)"
                 style={{
                   boxSizing: "border-box",
                   WebkitTapHighlightColor: "transparent",
