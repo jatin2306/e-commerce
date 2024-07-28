@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Login = () => {
+const Register = () => {
   return (
     <>
     <div
@@ -67,6 +67,26 @@ const Login = () => {
         }}
       >
         <h3
+          className="tabtitle title"
+          style={{
+            boxSizing: "border-box",
+            WebkitTapHighlightColor: "transparent",
+            color: "#222222",
+            fontFamily: "Rubik, sans-serif",
+            margin: "0px",
+            borderBottom: "2px solid rgb(235, 235, 235)",
+            lineHeight: "50px",
+            textAlign: "center",
+            textTransform: "uppercase",
+            width: "50%",
+            cursor: "pointer",
+            fontWeight: 700,
+            fontSize: "16px",
+          }}
+        >
+          Login
+        </h3>
+        <h3
           className="tabtitle title active"
           style={{
             boxSizing: "border-box",
@@ -85,26 +105,6 @@ const Login = () => {
             color: "#16bcdc",
           }}
         >
-          Login
-        </h3>
-        <h3
-          className="tabtitle title"
-          style={{
-            boxSizing: "border-box",
-            WebkitTapHighlightColor: "transparent",
-            color: "#222222",
-            fontFamily: "Rubik, sans-serif",
-            margin: "0px",
-            borderBottom: "2px solid rgb(235, 235, 235)",
-            lineHeight: "50px",
-            textAlign: "center",
-            textTransform: "uppercase",
-            width: "50%",
-            cursor: "pointer",
-            fontWeight: 700,
-            fontSize: "16px",
-          }}
-        >
           Register
         </h3>
       </div>
@@ -117,11 +117,11 @@ const Login = () => {
       >
         <div
           id="tablogin"
-          className="customer_login tabcontent active"
+          className="customer_login tabcontent"
           style={{
             boxSizing: "border-box",
             WebkitTapHighlightColor: "transparent",
-            display: "block",
+            display: "none",
           }}
         >
           <form
@@ -399,11 +399,11 @@ const Login = () => {
         </div>
         <div
           id="tabregister"
-          className="customer_register tabcontent"
+          className="customer_register tabcontent active"
           style={{
             boxSizing: "border-box",
             WebkitTapHighlightColor: "transparent",
-            display: "none",
+            display: "block",
           }}
         >
           <form
@@ -880,7 +880,8 @@ overflow-y: hidden;
 `,
       }}
     />
-  </>  )
+  </>
+  )
 }
 
-export default Login
+export default Register
