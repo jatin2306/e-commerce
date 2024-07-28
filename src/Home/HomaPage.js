@@ -7,6 +7,7 @@ import MobileHeader from "../Header/MobileHeader";
 import { useMediaQuery } from "@mui/material";
 import MainHeader from "../Header/MainHeader";
 import DealsOfTheDay from "./DealsOfTheDay";
+import ProductComponent from "./ProductComponent";
 
 const HomaPage = () => {
   const isMobile = useMediaQuery("(max-width:1024px)");
@@ -21,7 +22,8 @@ const HomaPage = () => {
       <HeroSection />
       <TrendingProducts />
       <PopularCategories />
-<DealsOfTheDay/>
+      <DealsOfTheDay />
+      <ProductComponent />
       <Footer />
     </>
   );

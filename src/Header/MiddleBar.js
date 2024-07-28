@@ -87,8 +87,8 @@ const MiddleBar = () => {
           >
             <Typography
               variant="h6"
-              component="a"
-              href="/"
+              component={Link}
+              to="/"
               sx={{ color: "#fff", textDecoration: "none", marginRight: 2 }}
             >
               WearFit
