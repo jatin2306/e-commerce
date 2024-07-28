@@ -1,12 +1,13 @@
-  import React from 'react'
-  import RouteConfig from './RouteConfig'
+import React from 'react'
+import RouteConfig from './RouteConfig'
+import './CSS/Index.css'
 
-  const App = () => {
-    return (
+const App = () => {
+  return (
     <>
-  <RouteConfig/>
+   <RouteConfig/>
     </>
-    )
-  }
+  )
+}
 
-  export default App
+export default App
